@@ -1,0 +1,58 @@
+
+/*Preload active button images*/
+
+body:after {
+    display:none;
+    content: url("../images/playbtna.png") url("../images/pausebtna.png") url("../images/volumebtnua.png") url("../images/volumebtnda.png") url("../images/mutebtns.png") url("../images/mutebtnns.png") ;
+}
+
+
+
+/*Wrappers & Containers*/
+
+.radioctrlsc {display: none;}
+.radioctrlso {display: inline-block; vertical-align: middle;}
+
+.volumectrls {float: left; padding-top: 10px;}
+
+.mutectrl {float: left; padding-top: 21px;}
+
+
+
+/*Buttons*/
+
+.playbtn {width: 70px; height: 83px; float: left; background: url("../images/playbtn.png") no-repeat; cursor: pointer;}
+.pausebtn {width: 70px; height: 83px; float: left; background: url("../images/pausebtn.png") no-repeat; cursor: pointer;}
+
+.volumel {width: 76px; height: 66px; float: left; background: url("../images/volumel.png") no-repeat;}
+.volnum {position: relative; left: 3px; bottom: 29px; font-family: 'VT323', cursive; font-size: 3.6rem; color: hsl(200,100%,50%); text-shadow: 0 -1px 0px hsla(200,100%,70%,1), 0 1px 0px hsla(0,0%,0%,.8), 0 0 13px hsl(200,100%,50%);}
+.volumebtnu {width: 48px; height: 33px; float: left; background: url("../images/volumebtnu.png") no-repeat; cursor: pointer; -o-transition: background .5s ease; -ms-transition: background .5s ease; -moz-transition: background .5s ease; -webkit-transition: background .5s linear; transition: background .5s linear;}
+.volumebtnd {width: 48px; height: 33px; float: left; background: url("../images/volumebtnd.png") no-repeat; cursor: pointer; clear: both; display: block; margin: -33px 0 0 76px;}
+
+.mutebtn {width: 122px; height: 54px; float: left; cursor: pointer;}
+
+
+
+/*Buttons - Active/Hover states*/
+
+.playbtn2 {width: 70px; height: 83px; float: left; background: url("../images/playbtna.png") no-repeat; cursor: pointer;}
+.pausebtn2 {width: 70px; height: 83px; float: left; background: url("../images/pausebtna.png") no-repeat; cursor: pointer;}
+
+.volumebtnu:active {background: url("../images/volumebtnua.png") no-repeat;}
+.volumebtnd:active {background: url("../images/volumebtnda.png") no-repeat;}
+
+#muteBtn.unmute {background: url("../images/mutebtns.png") no-repeat;}
+#muteBtn.mute {background: url("../images/mutebtnns.png") no-repeat;}
+
+
+
+/*Misc*/
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

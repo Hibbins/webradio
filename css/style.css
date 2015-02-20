@@ -1,0 +1,94 @@
+
+/*Main*/
+
+html, body {min-height:100%; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -webkit-font-smoothing: antialiased!important; -moz-osx-font-smoothing: grayscale;}
+html {height:100%; overflow: hidden;}
+body {height: 100%; position:relative; font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-weight: normal; font-size: 14px; line-height: 1.42857143; background: #1e1e1e;}
+
+a, a:visited {color: #fff; text-decoration: none; padding: 10px 15px 10px 0px !important; display: inline-block !important;}
+
+
+
+/*Fonts*/
+
+.spacefont {font-family: "VT323";}
+
+.sm {font-size: 1.5rem;}
+.me {font-size: 2.5rem;}
+.lg {font-size: 5rem;}
+.home-text {max-width: 700px; display: inline-block; padding-top: 1.5%; padding-bottom: 3.5%;}
+
+.bld {font-weight: bold;}
+
+.white {color: rgba(255,255,255,0.8) !important;}
+.grey {color: rgba(255,255,255,0.5);}
+
+.center {text-align: center;}
+.brk {padding-top: 15px;}
+.brk2 {padding-top: 15px; padding-bottom: 70px;}
+
+
+
+/*Backgrounds*/
+
+.bg {width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: -99; background: url("http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-52823.jpg"); background-size: cover; background-repeat: no-repeat; opacity: 0.2;}
+.bg2 {width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: -99; background: url("http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-89543.jpg"); background-size: cover; background-repeat: no-repeat; opacity: 0.2;}
+
+#background_cycler {width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: -1; opacity: 0.2;}
+#background_cycler li {width: 100%; height: 100%; position: absolute; top:0; left: 0; z-index: 1;}
+#background_cycler li.active {z-index: 3;}
+#background_cycler li:nth-child(1) {background: url("http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-137883.jpg"); background-size: cover; background-repeat: no-repeat;}
+#background_cycler li:nth-child(2) {background: url("http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-440.jpg"); background-size: cover; background-repeat: no-repeat;}
+#background_cycler li:nth-child(3) {background: url("http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-52844.jpg"); background-size: cover; background-repeat: no-repeat;}
+#background_cycler li:nth-child(4) {background: url("http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-136905.jpg"); background-size: cover; background-repeat: no-repeat;}
+#background_cycler li:nth-child(5) {background: url("http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-64089.jpg"); background-size: cover; background-repeat: no-repeat;}
+
+
+
+/*Nav buttons*/
+
+.topbtn {position: relative; left: -92px; margin-bottom: 15px; border-top: 3px solid rgba(255,255,255,0.05); border-bottom: 3px solid rgba(255,255,255,0.05); border-right: 3px solid rgba(255,0,0,0.1); cursor: pointer; border-radius: 0 5px 5px 0;}
+
+.btn-red {border-right: 3px solid rgba(255,0,0,0.1) !important; -o-transition: border-color .5s ease; -ms-transition: border-color .5s ease; -moz-transition: border-color .5s ease; -webkit-transition: border-color .5s ease; transition: border-color .5s ease;}
+.btn-red:hover {border-right: 3px solid rgba(255,0,0,1) !important;}
+
+.btn-green {border-right: 3px solid rgba(190, 255, 0, 0.1) !important; -o-transition: border-color .5s ease; -ms-transition: border-color .5s ease; -moz-transition: border-color .5s ease; -webkit-transition: border-color .5s ease; transition: border-color .5s ease;}
+.btn-green:hover {border-right: 3px solid rgba(190, 255, 0, 1) !important;}
+
+.btn-blue {border-right: 3px solid rgba(0, 185, 255, 0.1) !important; -o-transition: border-color .5s ease; -ms-transition: border-color .5s ease; -moz-transition: border-color .5s ease; -webkit-transition: border-color .5s ease; transition: border-color .5s ease;}
+.btn-blue:hover {border-right: 3px solid rgba(0, 185, 255, 1) !important;}
+
+
+
+/*Misc*/
+
+.topbar {width: 100%; height: 50px; position: absolute; top: 0; z-index: 2; background: #232323; -webkit-box-shadow: inset 0 -5px 18px -1px rgba(0,0,0,0.5); -moz-box-shadow: inset 0 -5px 18px -1px rgba(0,0,0,0.5); box-shadow: inset 0 -5px 18px -1px rgba(0,0,0,0.5);}
+.bottombar {width: 100%; height: 125px; line-height: 125px; text-align: center; position: absolute; bottom: 0; z-index: 2; background: #1a1a1a; -webkit-box-shadow: inset 0 5px 18px -1px rgba(0,0,0,0.6); -moz-box-shadow: inset 0 5px 18px -1px rgba(0,0,0,0.6); box-shadow: inset 0 5px 18px -1px rgba(0,0,0,0.6);}
+
+.topnav {position: absolute; top: 120px; z-index: 88; font-size: 2.1rem; font-weight: bold; color: #fff; list-style: none; text-decoration: none;}
+
+.fpwrap {width: 100%; height: 100%; float: left;}
+
+.weltext {width: 100%; float: left; padding-top: 13%; font-size: 3rem; color: rgba(255,255,255,0.5); text-align: center; font-weight: bold; text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1); letter-spacing: 5px;}
+
+.welbtnw {width: 100%; float: left; text-align: center;}
+.welbtn {width: 150px; height: 80px; line-height: 80px; display: inline-block; padding-left: 4px; text-align: center; border: 2px solid rgba(255,255,255,0.5); color: rgba(255,255,255,0.5) !important; border-radius: 5px; cursor: pointer; letter-spacing: 5px; text-shadow: none;
+  -o-transition: color .5s ease, border-color .5s ease;
+  -ms-transition: color .5s ease, border-color .5s ease;
+  -moz-transition: color .5s ease, border-color .5s ease;
+  -webkit-transition: color .5s ease, border-color .5s ease;
+  transition: color .5s ease, border-color .5s ease;
+}
+.welbtn:hover {border: 2px solid rgba(255,255,255,0.8); color: rgba(255,255,255,0.8) !important;}
+
+.clear {clear: both;}
+
+.infowrap {width: 100%; height: 100%; float: left; padding-top: 150px; text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);}
+.infotxt {max-width: 500px; display: inline-block; text-align: left;}
+
+.text-top {width: 100%; float: left; text-align: center;}
+.text-left {width: 50%; float: left; text-align: right;}
+.text-right {float: left; text-align: left;}
+
+.pdl {padding-left: 30px;}
+.pdr {padding-right: 30px}

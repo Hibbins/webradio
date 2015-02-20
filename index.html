@@ -1,0 +1,180 @@
+<!doctype html>
+
+  <head>
+
+    <base href="http://website.com/">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+
+    <title>Title Here - website.com</title>
+
+    <link type="text/css" href="css/reset.css" rel="stylesheet" />
+    <link type="text/css" href="css/style.css" rel="stylesheet" />
+    <link type="text/css" href="css/mobile.css" rel="stylesheet" />
+    <link id="cssLoad" type="text/css" rel="stylesheet" />
+    <link type="text/css" href="http://fonts.googleapis.com/css?family=VT323" rel="stylesheet" />
+    <link type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link type="text/css" href="fullPage.js-master/jquery.fullPage.css" rel="stylesheet" />
+    <link type="text/css" href="jquery-ui-1.11.2/jquery-ui.min.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery-ui-1.11.2/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="fullPage.js-master/jquery.fullPage.min.js"></script>
+    <script type="text/javascript" src="bowser/bowser.min.js"></script>
+    <script id="playerLoad" type="text/javascript"></script>
+    <script type="text/javascript" src="js/fslidescript.js"></script>
+    <script type="text/javascript" src="js/miscscripts.js"></script>
+
+    <script type="text/javascript">
+            $('#background_cycler').hide();
+    </script>
+
+    <script type="text/javascript">
+      function cycleImages(){
+        var $active = $('#background_cycler .active');
+        var $next = ($('#background_cycler .active').next().length > 0) ? $('#background_cycler .active').next() : $('#background_cycler li:first');
+        $next.css('z-index',2);
+        $active.fadeOut(150000,function(){
+        $active.css('z-index',1).show().removeClass('active');
+        $next.css('z-index',3).addClass('active');
+        });
+      }
+
+        $(window).load(function(){
+        $('#background_cycler').fadeIn(0);
+          setInterval('cycleImages()', 1800000);
+        });
+    </script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'GOOGLEANALYTICSID', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+
+  </head>
+
+  <body>
+
+    <!-- Source for audio stream -->
+
+    <audio id="audioSrc">
+      <source src="http://subdomain.website.com:8000/;stream/1;" type="audio/mpeg" />
+    </audio>
+
+    <!-- Navigation -->
+
+    <div class="topbar"></div>
+
+    <ul class="topnav">
+        <li data-menuanchor="Home" class="topbtn btn-red"><a href="#Home"><span style="font-size: 1.2rem; padding-left: 30px; padding-right: 40px;">HOME</span><i class="fa fa-home fa-lg"></i></a></li>
+        <li data-menuanchor="Radio" class="topbtn btn-green"><a href="#Radio"><span style="font-size: 1.2rem; padding-left: 30px; padding-right: 40px;">RADIO</span><i class="fa fa-volume-up fa-lg"></i></a></li>
+        <li data-menuanchor="About" class="topbtn btn-blue"><a href="#About"><span style="font-size: 1.2rem; padding-left: 30px; padding-right: 40px;">ABOUT</span><i class="fa fa-info fa-lg"></i></a></li>
+    </ul>
+
+    <div id="fullpage">
+
+        <!-- Home section -->
+
+        <div class="section" data-anchor="firstPage">
+
+          <div class="bg"></div>
+          <div class="fpwrap">
+            <div class="weltext"><p style="padding-bottom: 1.5%;">WELCOME TO</p><p class="spacefont lg">WEBSITE.COM</p><p class="home-text">YOU CAN EITHER SCROLL, USE THE NAVIGATION TO THE LEFT OR JUST PRESS THE BUTTON BELOW TO ENTER THE RADIO PAGE!</p>
+              <div class="welbtnw">
+                <a href="#Radio"><div data-menuanchor="Radio" class="welbtn">RADIO<br /><i class="fa fa-angle-down" style="position: relative; top: -65px;"></i></div></a>
+              </div>
+            </div>
+          </div>
+          <div class="bottombar"></div>
+
+        </div>
+
+        <!-- Radio section -->
+
+        <div class="section" data-anchor="secondPage">
+
+          <ul id="background_cycler">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+
+          <div class="bottombar">
+
+            <!-- Radio controls for Chrome -->
+
+            <div class="radioctrlsc">
+              <input type="radio" id="playButton" name="radio" data-icon="►" style="margin-right: 15px;">
+              <input type="radio" id="pauseButton" name="radio" data-icon="▮▮" style="margin-right: 100px;">
+              <input type="number" id="volumeCtrl" min="0" step="10" max="100" value="30" style="margin-right: 15px;">
+              <input type="checkbox" id="muteButton" data-icon1="♪" data-icon2="♯">
+            </div>
+
+              <!-- Radio controls for other browsers -->
+
+              <div class="radioctrlso">
+                <div class="playbtn" id="playBtn" style="margin-right: 15px;"></div>
+                <div class="pausebtn" id="pauseBtn" style="margin-right: 100px;"></div>
+                <div class="volumectrls" style="margin-right: 15px;">
+                  <div class="volumel"><span class="volnum noselect" id="volnumber"></span></div><span class="volumebtnu" id="volUp"></span><p><span class="volumebtnd" id="volDown"></span>
+                </div>
+                <div class="mutectrl">
+                  <div class="mutebtn unmute" id="muteBtn"></div>
+                </div>
+                <div class="clear"></div>
+              </div>
+          </div>
+
+        </div>
+
+        <!-- Information section -->
+
+        <div class="section">
+
+          <div class="bg2"></div>
+          <div class="infowrap grey">
+            <div class="text-top">
+              <div class="infotxt">
+                <p class="me white center">Information</p>
+                <p class="sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rutrum viverra odio nec bibendum. Aliquam et interdum massa. Phasellus ornare tincidunt pulvinar. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur porta commodo fermentum. Integer suscipit aug.</p>
+                <br />
+                <p class="sm brk2">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubiliad.</p>
+              </div>
+            </div>
+
+            <div class="text-left">
+              <div class="infotxt pdr">
+                <p class="me white center">Current song</p>
+                <p class="sm">If you are wondering what song is currently playing, you can always find it on the link below.</p>
+                <p class="sm brk center bld"><a href="http://subdomain.website.com" target="_blank">LINK</a></p>
+              </div>
+            </div>
+
+            <div class="text-right">
+              <div class="infotxt pdl">
+                <p class="me white center">Have a question ?</p>
+                <p class="sm">If you have any further questions or want to contact us about any other matters, send us an email to the address below.</p>
+                <p class="sm brk center">info@website.com</p>
+              </div>
+            </div>
+          </div>
+
+        <div class="bottombar"></div>
+
+        </div>
+
+    </div>
+
+  </body>
+
+</html>

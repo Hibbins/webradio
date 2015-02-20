@@ -1,0 +1,104 @@
+
+@media only screen and (max-width: 1100px) {
+
+  /*Chrome*/
+
+  input[type="radio"] {width: 50px !important; height: 63px !important; margin: 3px !important;}
+  input[type="radio"]:before {width: 44px !important; height: 55px !important; font: 16px/16px sans-serif !important; line-height: 33px !important; margin: 3px !important;}
+  input[type="radio"]:after {width: 38px !important; height: 3px !important; margin: 3px !important; left: 3px !important; top: 48px !important;}
+  input[type="number"] {width: 95px !important; height: 46px !important; font-size: 30px !important; margin-left: 10px !important; margin-right: 5px !important;}
+  input[type="checkbox"] {width: 90px !important; height: 35px !important;}
+  input[type="checkbox"]:before, input[type="checkbox"]:after {height: 25px !important; width: 40px !important; font: bold 18px/25px sans-serif !important;}
+  input[type="checkbox"]:before {left: 3px !important;}
+  input[type="checkbox"]:after {right: 3px !important;}
+
+
+
+  /*Other browsers*/
+
+  .playbtn {width: 50px !important; height: 63px !important; background-size: 100% !important; margin-right: 5px !important;}
+  .pausebtn {width: 50px !important; height: 63px !important; background-size: 100% !important; margin-right: 10px !important;}
+  .volumectrls {margin-right: 5px !important;}
+  .volumel {width: 56px !important; height: 46px !important; background-size: 100% !important;}
+  .volnum {bottom: 37px !important; font-size: 3rem !important;}
+  .volumebtnu {width: 38px !important; height: 23px !important; background-size: 100% !important;}
+  .volumebtnd {width: 38px !important; height: 23px !important; background-size: 100% !important; clear: none !important; display: initial !important; margin: 0px !important;}
+  .mutectrl {padding-top: 0px !important;}
+  .mutebtn {width: 90px !important; height: 46px !important; background-size: 100%  !important;}
+
+
+
+  /*General*/
+
+  .weltext {height: 320px !important; font-size: 1.2rem !important; padding-top: 25% !important;}
+  .home-text {max-width: 200px !important; text-align: center !important;}
+  .lg {font-size: 2rem !important;}
+  .me {font-size: 1.2rem !important;}
+  .sm {font-size: 0.9rem !important;}
+  .brk2 {padding-bottom: 10px !important;}
+  .pdl {padding-left: 10px !important;}
+  .pdr {padding-right: 0px !important;}
+  .topnav {top: 70px !important;}
+  #fp-nav {display: none !important;}
+  .welbtn {width: 70px !important; height: 50px !important; line-height: 50px !important; font-size: 0.9rem !important;}
+  .fa-angle-down {top: -40px !important;}
+  a, a:visited {padding: 5px 5px 5px 0px !important;}
+  .infowrap {height: 370px !important; padding-top: 50px !important;}
+  .infotxt {max-width: 200px !important;}
+  .text-left {width: calc(50% - 10px) !important; padding-left: 10px !important;}
+  .text-right {width: calc(50% - 10px) !important; padding-right: 10px !important;}
+
+}
+
+
+
+@media only screen and (max-width: 800px) {
+
+  /*Chrome*/
+
+  input[type="radio"] {width: 50px !important; height: 63px !important; margin: 3px !important;}
+  input[type="radio"]:before {width: 44px !important; height: 55px !important; font: 16px/16px sans-serif !important; line-height: 33px !important; margin: 3px !important;}
+  input[type="radio"]:after {width: 38px !important; height: 3px !important; margin: 3px !important; left: 3px !important; top: 48px !important;}
+  input[type="number"] {width: 95px !important; height: 46px !important; font-size: 30px !important; margin-left: 10px !important; margin-right: 5px !important;}
+  input[type="checkbox"] {width: 90px !important; height: 35px !important;}
+  input[type="checkbox"]:before, input[type="checkbox"]:after {height: 25px !important; width: 41px !important; font: bold 18px/25px sans-serif !important;}
+  input[type="checkbox"]:before {left: 3px !important;}
+  input[type="checkbox"]:after {right: 3px !important;}
+
+
+
+  /*Other browsers*/
+
+  .playbtn {width: 50px !important; height: 63px !important; background-size: 100% !important; margin-right: 5px !important;}
+  .pausebtn {width: 50px !important; height: 63px !important; background-size: 100% !important; margin-right: 10px !important;}
+  .volumectrls {margin-right: 5px !important;}
+  .volumel {width: 56px !important; height: 46px !important; background-size: 100% !important;}
+  .volnum {bottom: 37px !important; font-size: 3rem !important;}
+  .volumebtnu {width: 38px !important; height: 23px !important; background-size: 100% !important;}
+  .volumebtnd {width: 38px !important; height: 23px !important; background-size: 100% !important; clear: none !important; display: initial !important; margin: 0px !important;}
+  .mutectrl {padding-top: 18px !important;}
+  .mutebtn {width: 90px !important; height: 46px !important; background-size: 100% !important;}
+
+
+
+  /*General*/
+
+  .weltext {height: 320px !important; font-size: 1.2rem !important; padding-top: 25% !important;}
+  .home-text {max-width: 200px !important; text-align: center !important;}
+  .lg {font-size: 2rem !important;}
+  .me {font-size: 1.2rem !important;}
+  .sm {font-size: 0.9rem !important;}
+  .brk2 {padding-bottom: 10px !important;}
+  .pdl {padding-left: 10px !important;}
+  .pdr {padding-right: 0px !important;}
+  .topnav {top: 70px !important;}
+  #fp-nav {display: none !important;}
+  .welbtn {width: 70px !important; height: 50px !important; line-height: 50px !important; font-size: 0.9rem !important;}
+  .fa-angle-down {top: -40px !important;}
+  a, a:visited {padding: 5px 5px 5px 0px !important;}
+  .infowrap {height: 370px !important; padding-top: 50px !important;}
+  .infotxt {max-width: 200px !important;}
+  .text-left {width: calc(50% - 10px) !important; padding-left: 10px !important;}
+  .text-right {width: calc(50% - 10px) !important; padding-right: 10px !important;}
+
+}
